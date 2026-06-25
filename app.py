@@ -5,7 +5,7 @@ from sklearn.preprocessing import LabelEncoder
 
 
 model = joblib.load("extra_trees_credit_model.pkl")
-enncoders = {col : joblib.load(f"{col}_encoder.okl") for col in ["Sex", "Housing", "Saving accounts", "Checking accounts"]}
+enncoders = {col : joblib.load(f"{col}_encoder.pkl") for col in ["Sex", "Housing", "Saving accounts", "Checking account"]}
 
 st.title("Credit Risk Prediction App")
 st.write("Enter applicant information to predict whether the credit is good or bad")
@@ -23,6 +23,7 @@ encoders = {
     col: joblib.load(f"{col}_encoder.pkl")
     for col in ["Sex", "Housing", "Saving accounts", "Checking account"]
 }
+
 input_df = pd.DataFrame({
     "Age" : [age],
     "Sex" : [encoders["Sex"].transform([sex])[0]],
