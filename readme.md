@@ -93,11 +93,11 @@ Evaluation metric:
 
 ### Prediction result
 
-![Prediction Result](images/prediction 1.png)
+![Prediction Result](/images/prediction%201.png)
 
 ### Prediction Result
 
-![Prediction Result](images/prediction 2.png)
+![Prediction Result](/images/prediction%202.png)
 
 ---
 
